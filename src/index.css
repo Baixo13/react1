@@ -11,3 +11,147 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*MIS ESTILOS*/
+
+body{
+  background-color: cornflowerblue;
+}
+
+button{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0;   
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.block{
+  border: 5px solid gray;
+  background-color: green;
+}
+.element{
+  border: 1px solid gray;
+  background-color: orangered;
+}
+
+/* General Styles */
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Variables CSS*/
+:root{
+  --primary: crimson;
+  --secondary: rgb(255, 129, 129);
+  --dark: rgb(20, 20, 20);
+  --light:  white;
+  --dark-soft: rgba(0,0,0,0.7);
+  --light-soft: rgba(255, 255, 255, 0.9);
+  --btn-primary: crimson;
+  --text-primary: crimson;
+  --text-light: white;
+}
+
+
+/* PORTFOLIO */
+.portfolio{
+  width: 100%;
+
+  padding: 70px 20px;
+
+  background-color: var(--dark);
+
+  color: var(--light);
+
+  text-align: center;
+}
+
+.portfolio__head{
+  margin-bottom: 40px;
+}
+
+.portfolio__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/* CARD */
+.card{
+  margin:10px;
+  padding: 10px;
+  flex: 1;
+  width: 200px;
+}
+
+.card__img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px 0 20px 0;
+}
+
+.card__head{
+  margin: 5px;
+
+  font-size: 25px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.card__parrafo{
+  font-size: 12px;
+}
+
+.card__button{
+  width: 50%;
+  padding: 5px 20px;
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+
+/* MODAL */
+.modal{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__none{
+  display: none;
+}
+
+.modal__box{
+  position: relative;
+  background-color: white;
+  color: var(--text-primary);
+  padding: 10px;
+  border: 1px solid var(--primary);
+}
+
+.modal__close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: var(--text-primary);
+  font-size: 30px;
+  font-weight: 600;
+}
